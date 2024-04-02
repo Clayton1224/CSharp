@@ -52,3 +52,15 @@ public class Funcionario: Pessoa {
 
                }
           }
+
+
+          public class Diretor : Funcionario { 
+
+            public Diretor(string nome, int idade, string cpf, double salario): base(nome, idade, cpf, salario) { 
+            }
+
+            public override double Bonus { 
+                return base.Bonus() + 1000;
+            }
+          }
+           
